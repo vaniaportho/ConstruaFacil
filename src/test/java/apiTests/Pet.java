@@ -46,7 +46,8 @@ public class Pet {
                 .body("name", is("Zico"))            // Valida o nome do animal
                 .body("category.name", is("dog"))       // Valida a categoria do animal
                 //.body("tags.name", not(contains("não vermifugado")))  // Valida se contem a palavra chava
-                .body("tags.name", contains("vermifugado ok"))
+                .body("tags.name[0]", stringContainsInOrder("primeira semana"))
+                .body("tags.name[1]", stringContainsInOrder("segunda semana"))
         ;
     }
 
@@ -64,6 +65,23 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is("Zico"))
                 .body("status", is("available"))
+                ;
+    }
+
+    @Test
+    public void alterarPet() throws IOException {
+        String jsonBody = lerJson("src/test/resources/data/newpet.json");
+
+        given()
+                .contentType("application/json")
+                .log().all()
+                .body(jsonBody) //Json a ser transmitido para a alteração
+        .when()
+                .put("https://petstore.swagger.io/v2/pet/")
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("status", is("sold"))
                 ;
     }
 }
