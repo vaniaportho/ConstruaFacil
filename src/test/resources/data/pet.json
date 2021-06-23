@@ -1,0 +1,18 @@
+{
+  "id": 10138,
+  "category": {
+    "id": 1,
+    "name": "dog"
+  },
+  "name": "Zico",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "vermifugado ok"
+    }
+  ],
+  "status": "available"
+}
