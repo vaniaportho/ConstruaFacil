@@ -1,5 +1,5 @@
 Request method:	GET
-6Request URI:	https://petstore.swagger.io/v2/pet/10138
+[Request URI:	https://petstore.swagger.io/v2/user/login?username=peppa&password=peppa%40123
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -11,37 +11,21 @@
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-$Date: Wed, 23 Jun 2021 23:43:18 GMT
+$Date: Sun, 04 Jul 2021 16:08:17 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Access-Control-Allow-Origin: *
 5Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 CAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+.X-Expires-After: Sun Jul 04 17:08:17 UTC 2021
+X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 10138,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "Zico",
-    "photoUrls": [
-        "string"
-    ],
-    "tags": [
-
-        {
-            "id": 0,
-<            "name": "animal vermifugado na primeira semana"
-        },
-
-        {
-            "id": 1,
-1            "name": "vacinado na segunda semana"
-
-        }
-    ],
-    "status": "sold"
+    "code": 200,
+    "type": "unknown",
+6    "message": "logged in user session:1625414897254"
 }
+4A mensagem é :logged in user session:1625414897254
+O token é:1625414897254

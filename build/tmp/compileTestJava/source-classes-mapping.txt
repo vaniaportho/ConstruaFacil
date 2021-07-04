@@ -2,3 +2,5 @@ unitTests/TestaCalc.java
  unitTests.TestaCalc
 apiTests/Pet.java
  apiTests.Pet
+apiTests/User.java
+ apiTests.User
