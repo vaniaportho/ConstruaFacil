@@ -1,0 +1,22 @@
+{
+  "id": 10138,
+  "category": {
+    "id": 1,
+    "name": "dog"
+  },
+  "name": "Zico",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "animal vermifugado na primeira semana"
+    },
+    {
+      "id": 1,
+      "name": "vacinado na segunda semana"
+    }
+  ],
+  "status": "sold"
+}
