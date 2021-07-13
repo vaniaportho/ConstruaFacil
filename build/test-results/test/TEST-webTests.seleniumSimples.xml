@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="webTests.seleniumSimples" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-07-13T01:57:38" hostname="nm-Inspiron-5570" time="21.251">
+  <properties/>
+  <testcase name="consultarCursoMantis" classname="webTests.seleniumSimples" time="10.457"/>
+  <testcase name="consultarCursoCTFL" classname="webTests.seleniumSimples" time="10.152"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 23457
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1626141457,804][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+jul 12, 2021 10:57:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 23823
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1626141468,932][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+jul 12, 2021 10:57:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+</testsuite>
