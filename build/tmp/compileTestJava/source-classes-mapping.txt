@@ -1,12 +1,14 @@
 utils/Evidencias.java
  utils.Evidencias
-webTests/seleniumSimples.java
- webTests.seleniumSimples
+unitTests/TestaCalc.java
+ unitTests.TestaCalc
 apiTests/User.java
  apiTests.User
 webTests/seleniumIDE.java
  webTests.seleniumIDE
 apiTests/Pet.java
  apiTests.Pet
-unitTests/TestaCalc.java
- unitTests.TestaCalc
+utils/Logs.java
+ utils.Logs
+webTests/seleniumSimples.java
+ webTests.seleniumSimples
