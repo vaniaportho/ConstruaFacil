@@ -12,3 +12,5 @@ utils/Logs.java
  utils.Logs
 webTests/seleniumSimples.java
  webTests.seleniumSimples
+webTests/comprarCursoCS.java
+ webTests.comprarCursoCS
