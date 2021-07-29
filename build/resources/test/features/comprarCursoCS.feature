@@ -27,3 +27,9 @@ Funcionalidade: : Comprar Curso CS
       | curso               | preco       |
       | "Mantis"            | "R$ 49,99"  |
       | "Preparatório CTFL" | "R$ 169,00" |
+
+    Cenario: Ver Detalhes de Um Curso
+      Dado que acesso o site da Iterasys
+      E clico no botao OK do popup da LGPD
+      Quando clico na imagem de um curso
+      Entao vejo a pagina com detalhes do curso
