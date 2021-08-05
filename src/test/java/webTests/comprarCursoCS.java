@@ -8,6 +8,7 @@ import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -24,7 +25,7 @@ public class comprarCursoCS {
     public void iniciar(){
         System.setProperty("webdriver.chrome.driver", "drivers/chrome/92/chromedriver");
         driver = new ChromeDriver();
-        //driver.manage().window().setSize(new Dimension(1600, 833));
+        driver.manage().window().setSize(new Dimension(1600, 833));
         driver.manage().timeouts().implicitlyWait(60000, TimeUnit.MILLISECONDS);
 
         wait = new WebDriverWait(driver,60,1); //espera até 60 segundos
@@ -90,8 +91,16 @@ public class comprarCursoCS {
     }
 
     @Quando("^clico na imagem de um curso$")
-    public void clicoNaImagemDeUmCurso() {
-        driver.findElement(By.cssSelector("span.mais")).click();
+    public void clicoNaImagemDeUmCurso() throws InterruptedException {
+        //driver.findElement(By.cssSelector("span.mais")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.cssSelector("body.flat-theme:nth-child(2) div.container.lis_loja:nth-child(2) div.initial-cursos div.row.lis_loja:nth-child(3) div.col-md-12 div.owl-carousel.owl-theme.course-list.lis_produtos.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active:nth-child(3) div.item-plan.item.item-course a:nth-child(2) > span.comprar")).click();
+        //WebElement saibaMais = driver.findElement(By.xpath("//body[1]/main[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]"));
+
+        WebElement ele = driver.findElement(By.xpath("/html[1]/body[1]/main[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/a[1]"));
+        Actions action = new Actions(driver);
+        action.moveToElement(ele).perform();
+        System.out.println("3 - Clicou no curso");
     }
 
     @Entao("^vejo a pagina com detalhes do curso$")

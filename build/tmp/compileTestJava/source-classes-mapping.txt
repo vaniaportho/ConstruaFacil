@@ -1,7 +1,11 @@
-utils/Evidencias.java
- utils.Evidencias
 unitTests/TestaCalc.java
  unitTests.TestaCalc
+utils/Evidencias.java
+ utils.Evidencias
+webTests/seleniumSimples.java
+ webTests.seleniumSimples
+webTests/comprarCursoCS.java
+ webTests.comprarCursoCS
 apiTests/User.java
  apiTests.User
 webTests/seleniumIDE.java
@@ -10,7 +14,11 @@ apiTests/Pet.java
  apiTests.Pet
 utils/Logs.java
  utils.Logs
-webTests/seleniumSimples.java
- webTests.seleniumSimples
-webTests/comprarCursoCS.java
- webTests.comprarCursoCS
+pages/Home.java
+ pages.Home
+stepsPO/Hooks.java
+ stepsPO.Hooks
+stepsPO/Runner.java
+ stepsPO.Runner
+stepsPO/comprarCursoPO.java
+ stepsPO.comprarCursoPO
